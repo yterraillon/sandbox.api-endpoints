@@ -2,18 +2,16 @@ using Application.Todo.Commands.CreateTodo;
 using Application.Todo.Commands.DeleteTodo;
 using Application.Todo.Queries.GetAllTodos;
 using Application.Todo.Queries.GetTodo;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TodoController : ControllerBase
+    public class OldTodoController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public TodoController(IMediator mediator) => _mediator = mediator;
+        public OldTodoController(IMediator mediator) => _mediator = mediator;
 
         [HttpGet]
         public async Task<IActionResult> Get()
