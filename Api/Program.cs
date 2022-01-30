@@ -1,3 +1,4 @@
+/// Based on https://github.com/ardalis/ApiEndpoints/blob/main/README.md
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
